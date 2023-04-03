@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Norse-Bold'; /*a name to be used later*/
+    src: url('Norse-Bold.otf'); /*URL to font*/
+}
+
+body {
+    display: flex;
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px;
+}
+
+#image {
+    position: relative;
+    background-image: url('image.avif');
+    width: 1000px;
+    height: 100vh;
+}
+
+.logodiv {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo {
+    width: 100px;
+    height: auto;
+    margin: 0;
+}
+
+span {
+    color:azure;
+    font-family: "Norse-bold";
+    font-size: 100px;
+}
+
+#by {
+    font-size: 14px;
+    position: absolute;
+    bottom: 5px;
+    color:azure;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center;
+}
+
+
+input, label {
+    display: flex;
+    width: 250px;
+    appearance: none;
+    box-sizing: border-box;
+}
+
+#info {
+    padding: 125px 60px 50px 60px;
+    background-color: aliceblue;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+#form {
+    padding: 50px 60px 50px 60px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#inputwindow {
+    display: flex;
+    gap: 25px;
+    
+}
+
+legend {
+    font-size: 28px;
+}
+
+input {
+    margin-top: 3px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding-left: 5px;
+    border-color: lightgrey;
+}
+
+input:hover {
+    outline: none;
+    border: 1px solid;
+    border-color: rgb(47, 144, 255);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: rgb(87, 87, 87);
+}
+
+#button {
+    padding: 20px 60px 20px 60px;
+}
+
+input[type="submit"] {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #596D48;
+    color: azure;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+}
+
+#login {
+    font-size: 18px;
+}
