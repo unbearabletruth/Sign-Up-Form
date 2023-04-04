@@ -3,11 +3,17 @@
     src: url('Norse-Bold.otf'); /*URL to font*/
 }
 
+
 body {
     display: flex;
-
+    padding: 0px 200px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0px;
+    background-color: rgb(17, 17, 17);
+}
+
+#container {
+    background-color: white;
 }
 
 #image {
@@ -15,6 +21,7 @@ body {
     background-image: url('image.avif');
     width: 1000px;
     height: 100vh;
+    color: whitesmoke;
 }
 
 .logodiv {
@@ -33,7 +40,6 @@ body {
 }
 
 span {
-    color:azure;
     font-family: "Norse-bold";
     font-size: 100px;
 }
@@ -42,14 +48,12 @@ span {
     font-size: 14px;
     position: absolute;
     bottom: 5px;
-    color:azure;
     left: 0; 
     right: 0; 
     margin-left: auto; 
     margin-right: auto; 
     text-align: center;
 }
-
 
 input, label {
     display: flex;
@@ -60,7 +64,7 @@ input, label {
 
 #info {
     padding: 125px 60px 50px 60px;
-    background-color: aliceblue;
+    background-color: rgb(241, 241, 241);
     font-size: 28px;
     font-weight: 500;
 }
@@ -72,12 +76,12 @@ input, label {
 
 #inputwindow {
     display: flex;
-    gap: 25px;
-    
+    gap: 75px;
 }
 
 legend {
     font-size: 28px;
+    color: rgb(61, 61, 61);
 }
 
 input {
@@ -89,7 +93,7 @@ input {
     border-color: lightgrey;
 }
 
-input:hover {
+input:focus {
     outline: none;
     border: 1px solid;
     border-color: rgb(47, 144, 255);
@@ -98,29 +102,36 @@ input:hover {
 
 label {
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 12px;
     color: rgb(87, 87, 87);
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 #button {
     padding: 20px 60px 20px 60px;
 }
 
-input[type="submit"] {
+button {
     width: 200px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #596D48;
-    color: azure;
+    color: white;
     font-size: 18px;
     font-weight: bold;
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 0px;
 }
 
 a {
+    color: inherit;
+}
+
+#loglink {
     text-decoration: none;
     color: #596D48;
     font-weight: bold;
