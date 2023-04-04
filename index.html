@@ -31,30 +31,30 @@
                 <div id="inputwindow">
                     <div class="firstcol">
                         <p>
-                            <label for="firstname">first name</label>
-                            <input type="text" id="firstname" name="firstname" />
+                            <label for="firstname">first name *</label>
+                            <input type="text" id="firstname" name="firstname" required/>
                         </p>
                         <p>
                             <label for="email">email</label>
                             <input type="email" id="email" name="email" />
                         </p>
                         <p>
-                            <label for="password">password</label>
-                            <input type="password" id="password" name="password" />
+                            <label for="password">password *</label>
+                            <input type="password" id="password" name="password" required/>
                         </p>  
                     </div>
                     <div class="secondcol">
                         <p>
-                            <label for="lastname">last name</label>
-                            <input type="text" id="lastname" name="lastname" />
+                            <label for="lastname">last name *</label>
+                            <input type="text" id="lastname" name="lastname" required/>
                         </p>
                         <p>
                             <label for="phonenumber">phone number</label>
                             <input type="tel" id="phonenumber" name="phonenumber" />
                         </p>
                         <p>
-                            <label for="confirmpassword">confirm password</label>
-                            <input type="password" id="confirmpassword" name="confirmpassword" />
+                            <label for="confirmpassword">confirm password *</label>
+                            <input type="password" id="confirmpassword" name="confirmpassword" required/>
                         </p>  
                     </div> 
                 </div>
@@ -67,11 +67,8 @@
             <p id="login">
                 Already have an account? <a id="loglink" href="smth">Log in</a>
             </p>
-
         </div>
-        
-
-    </div>
-    
+        <script src="script.js"></script>
+    </div> 
 </body>
 </html>
