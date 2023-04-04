@@ -39,7 +39,7 @@ body {
     margin: 0;
 }
 
-span {
+.logodiv span {
     font-family: "Norse-bold";
     font-size: 100px;
 }
@@ -151,7 +151,11 @@ a {
     font-size: 18px;
 }
 
-input:invalid:focus {
+input:invalid {
     border-color: rgb(255, 47, 47);
 }
 
+input + span.error {
+    font-size: 14px;
+    color: rgb(255, 47, 47);
+}

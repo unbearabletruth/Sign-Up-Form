@@ -1,12 +1,14 @@
 const input = document.getElementById("confirmpassword");
-const buttoncheck = document.getElementsByTagName("button")[0];
+const form = document.querySelector("form");
+const invalid = document.querySelector("input + span.error");
 
-function check() {
+form.addEventListener("submit", (event) => {
     if (input.value != document.getElementById("password").value) {
-        input.setCustomValidity("Password Must be Matching.");
+        input.setCustomValidity("wrong");
+        invalid.textContent = "Password Must be Matching";
+        event.preventDefault();
     } else {
-        input.setCustomValidity('');
+        input.setCustomValidity("");
     }
-}
-
-buttoncheck.addEventListener("click", check);
+    }
+  );
